@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr Puff — Official Page</title>
+  <style>
+    * {box-sizing: border-box; margin: 0; padding: 0;}
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(135deg, #111827, #1e3a8a);
+      color: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;ss
+      padding: 30px;
+    }ssss
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 40px 35px;
+      text-align: center;
+      max-width: 520px;
+      width: 100%;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      font-size: 2rem;
+      color: #22d3ee;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: #9ca3af;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #e5e7eb;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      margin: 8px;
+      border-radius: 10px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+    .btn:hover {
+      background: #1e40af;
+      transform: scale(1.05);
+    }
+    #contactInfo {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    .social-link {
+      display: block;
+      margin: 8px 0;
+      color: #22d3ee;
+      text-decoration: none;
+    }
+    .social-link:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 25px;
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Dr Puff</h1>
+    <h2>Entrepreneur | Innovator | Visionary</h2>
+
+    <p>
+      Welcome to my official page. I’m passionate about growth, creativity, and meaningful connections.  
+      Here you can learn a bit about who I am and how to reach out for collaborations or inquiries.
+    </p>
+
+    <a href="#" class="btn" id="toggleContact">📩 Contact Me</a>
+
+    <div id="contactInfo">
+      <p>You can reach me through any of the following:</p>
+      <a href="https://wa.me/447440444877" target="_blank" class="social-link">💬 WhatsApp</a>
+      <a href="https://snapchat.com/add/Bighitz1" target="_blank" class="social-link">👻 Snapchat</a>
+      <a href="mailto:drpuff49@gmail.com" class="social-link">📧 Email</a>
+    </div>
+
+    <div class="footer">
+      © 2025 Dr Puff | All Rights Reserved
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById('toggleContact');
+    const info = document.getElementById('contactInfo');
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (info.style.display === 'block') {
+        info.style.display = 'none';
+        btn.textContent = '📩 Contact Me';
+      } else {
+        info.style.display = 'block';
+        btn.textContent = '❌ Hide Contact';
+      }
+    });
+  </script>
+</body>
+</html>
